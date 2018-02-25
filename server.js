@@ -13,6 +13,10 @@ app.get('/dotA',function(req,res){
     res.send('DotA!');
 });
 
+app.get('/article1',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','article1.html'));
+    
+});
 app.get('/dotA/hero/faceless',function(req,res){
     res.send('hero=Faceless Void');
 });
