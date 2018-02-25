@@ -13,6 +13,14 @@ app.get('/dotA',function(req,res){
     res.send('DotA!');
 });
 
+app.get('/dotA/hero/faceless',function(req,res){
+    res.send('hero=Faceless Void');
+});
+
+app.get('/dotA/hero/drow',function(req,res){
+    res.send('hero=Drow Ranger');
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
